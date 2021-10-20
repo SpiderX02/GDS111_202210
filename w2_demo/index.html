@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W2D2 | Demo</title>
+
+    <!--link to an external Cascading Style Sheet: this external file can style many pages at once-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+<body>
+   
+    <!--div elements are block level elements-->
+    <!--they do NOT contain content on their own, they hold other BLE; they are used for sectioning or grouping of elements-->
+    <div id="wrapper"><!--wraps around all content on page-->
+        
+        <div id="header">
+            <h1 id="page head">Week 2 Day 2 Demo | Divs & External CSS</h1>
+
+        </div><!--/ #header-->
+        
+        <div id="nav">
+            <div id="buttons"> <!--allows us to center buttons inside of the nav bar-->
+
+                <!-- hypertext link element is anchor tag requires an href attribute -->
+                <a href="index.html" class="btn">HOME</a> <!-- internal page link -->
+                <a href="#" class="btn">FOOTER</a><!--"page jump" link-->
+                <a href="https://students.neit.edu" class="btn">NEIT</a> <!-- external page -->
+
+            </div> <!--/ #buttons -->
+
+        </div><!--/ #nav-->
+    
+        <div id="content">
+            <h2 class="title">BIO</h2>
+            <p>Wafer cupcake souffle. Ice cream marzipan. Lemon Peppa Steppa</p>
+
+            <div class="section"><!--SCHOOLS-->
+                <h2 class="title">SCHOOLS</h2>
+                <ol>
+                    <li>school 1</li>
+                    <li>school 2</li>
+                    <li>school 3</li>
+                </ol>
+            </div>
+
+            <div class="section">
+                <h2 class="title">HOBBIES</h2>
+
+                <ul>
+                    <li>Hobby 1</li>
+                    <li>hobby 2</li>
+                    <li>Hobby 3</li>
+                </ul>
+            </div>
+
+
+        </div><!--/ #content-->
+
+        <div id="footer">
+            <p class="copy">&copy;2021 | HTML & Javascript | GDS11</p>
+        
+        </div> <!--/ #footer -->
+        
+
+    </div><!--/ #wrapper div -->
+</body>
