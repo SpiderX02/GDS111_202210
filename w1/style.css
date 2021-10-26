@@ -1,0 +1,83 @@
+/*stylesheet for W2D2 demo */
+
+/*BACKGROUND-------------- */
+
+body { background-color: navy;}
+/*background-image:url(--);*/
+
+/*WRAPPER----------------- */
+
+#wrapper {
+
+    /*to center, first give a width*/
+    width: 780px;
+    /*next, add a margin: auto*/
+    margin:auto;/*auto space on the left and right*/
+    border: 5px solid black;
+    background-color: lightgrey;
+    /*adds space between content & the */
+    padding: 20px;
+}
+
+/*HEADER------------------ */
+
+h1 {
+    color: white; text-align: center;
+}
+
+#header {
+    background-color: cadetblue; 
+    height: 100px; 
+    padding: 10px; 
+    border: 3px solid black;
+}
+/*center text vertically*/
+/*must be equal to the height*/
+
+/*NAV--------------------- */
+#nav {
+    width: 780px;
+    height: 50px;
+    background-color: peru;
+    border:3px solid black;
+}
+
+#buttons {
+    margin: auto;
+    width: 315px;
+    height: 50px;
+    border: 3px solid grey;
+}
+
+.btn{
+    display: block;
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin-right: 2px;
+    line-height: 50px;
+    text-align: center;
+    /*remove underline*/
+    text-decoration: none;
+    background-color: mediumturquoise;
+    font-weight: bold;
+    color: black;
+}
+
+.btn:active {
+    background-color: black;
+}
+
+.btn:visited {
+    color: midnightblue;
+}
+
+/*CONTENT----------------- */
+
+/*FOOTER------------------ */
+#footer {
+    width: 760px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+}

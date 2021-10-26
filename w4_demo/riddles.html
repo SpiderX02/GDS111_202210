@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 Demo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="week4.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        
+        <div id="header">
+            <h1 id="title">Freddy Santiago - About Me</h1>
+        </div>
+            
+        <div id="nav">
+            <div id="buttons">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="schools.html" class="nav-link">SCHOOLS</a>
+                <a href="riddles.html" class="nav-link">RIDDLES</a>
+            </div>
+        </div>
+        
+        <div id="content">
+            <h2 class="section-title">Riddle Me This Batman!</h2>
+            <!--reusable div for each question-->
+            <div class="question">
+                <p class="question-text">1.Riddle me this Batman. Overgrown, abandoned, the inmates set free, madness could never be held in me. </p>
+                
+                <div class="answer-btn">
+                    <input class="get" type="button" value="boop!" onclick="answer1();"/>
+                </div>
+                
+                <!--Creates empty element space for JS to write answer to in page-->
+                <span class="the-answer" id="question1"></span>
+            </div> <!--/ .questions-->
+
+            <div class="question">
+                <p class="question-text">2.A million dollar home for a spoilt child, his parents are dead but his parties are wild.</p>
+                
+                <div class="answer-btn">
+                    <input class="get" type="button" value="answer" onclick="answer2();"/>
+                </div>
+                
+                <!--Creates empty element space for JS to write answer to in page-->
+                <span class="the-answer" id="question2"></span>
+            </div> <!--/ .questions-->
+
+            <div class="question">
+                <p class="question-text">3. It doesn't take much to tame a cat, make them wear this, then call the bat.</p>
+                
+                <div class="answer-btn">
+                    <input class="get" type="button" value="answer" onclick="answer3();"/>
+                </div>
+                
+                <!--Creates empty element space for JS to write answer to in page-->
+                <span class="the-answer" id="question3"></span>
+            </div> <!--/ .questions-->
+
+        </div> <!--/ content-->
+            
+        <div id="footer"></div>
+    
+    </div>
+</body>
+</html>
