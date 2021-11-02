@@ -1,0 +1,115 @@
+/*Cascading stylesheet for Steve unofficaial website*/
+body {
+    background-color: grey;
+    background-image: url(image/bg.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkgray;
+    font-size: 18px;
+}
+
+#container {
+    width: 940px;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: darkblue;
+    border-radius: 10px; /*rounds corners*/
+    box-shadow:white;
+}
+
+#main-header {
+    width: 940px;
+    height: 100px;
+    border-bottom:1px solid white;
+    background-image: url(images/head.jpg);
+    float: left;
+}
+
+#name {
+    float: left;
+    color: cornsilk;
+    margin-left: 30px;
+    text-shadow: 1px 1px 8px white;
+}
+
+#nav {
+    float: left;
+    width: 100%;
+    padding: 40px;
+    background-color: black;
+    background-image: url(images/navbg.png); /*image will only repeat horizontally*/
+    background-repeat: repeat-x;
+    margin-bottom: 10px;
+}
+
+#btn-container {
+    width: 650px;
+    margin: auto; /*auto margin on left and right INSIDE of the nav conatiner*/
+    height: 40px;
+}
+
+.btn {
+    float: left;
+    width: 130px;
+    height: 40px;
+    color: white;
+    text-decoration: none; /*center text on x-axis*/
+    text-align: center; /*center text on y-axis; value must match height value*/
+    line-height: 40px;
+}
+
+.btn:hover {
+    background-color: white;
+    background-image: url(images/btn.jpg);
+    text-shadow:2px 2px 6px black;
+}
+
+#left {
+    border: 1px solid white;
+    float: left;
+    width: 660px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#right {
+    border: 1px solid white;
+    float: right;
+    width: 240px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#sidebar {
+    float: left;
+    width: 240px;
+    height: 30px;
+    background-color: white;
+    margin-bottom: 10px;
+    background-image: url(images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;/*position images in the background*/
+}
+
+.feature-title {
+    float: left;
+    font-size: 18px;
+    margin: 5px 0 0 10px;
+}
+
+.side-tn {
+    float: left;
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+/*We need to clear in order for the floats to stop making a mess! Clear property puts up a wall so stuff can't float beyond it*/
+footer {
+    clear: both;
+    width: 940px;
+    height: 40px;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-top: 2px solid white;
+}
