@@ -1,7 +1,45 @@
-#wrapper {width: 980px; margin: auto;}
+body {background-image: url(images/background.png); background-color: azure;}
 
-div {border: 1px solid red; margin: 10px; padding: 10px;}
+div {border: 1px solid black; padding: 10px; margin-bottom: 10px; border-radius: 10px;}
 
-footer {text-align: center;}
+#wrapper {
+    width: 1000px;
+    height: 900px;
+    margin:auto;
+    box-shadow:3px 3px 8px black;
+    border-radius: 10px; /*rounds corners of block level elements*/
+}
 
-header {text-align: center;}
+h1 {color: black; text-align: center;}
+
+#header {background-color: cadetblue; height: 500px; padding: 50px; border: 50px solid black;}
+
+#nav {width: 780px; height: 50px; background-color: rgb(32, 202, 75); border:3px solid black;}
+
+#buttons {margin: auto; width: 315px; height: 50px; border: 3px solid grey;}
+
+.btn {
+    display: block;
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin-right: 2px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    background-color: mediumturquoise;
+    font-weight: bold;
+    color: black;
+}
+
+.btn:active {background-color: black;}
+
+.btn:visited {color: midnightblue;}
+
+#clear {clear: both; border: none;}
+
+#footer {width: 250px; height: 250px; text-align: center; font-size: 10px;}
+
+#left {width: 45%; float: left;}
+
+#right {width: 45%; float: right;}

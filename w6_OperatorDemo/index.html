@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Operators Demo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
 <!--link to external CSS file-->
     <script type="text/javascript" src="style.css"></script>
 <!--link to external JS file-->
     <script type="text/javascript" src="demo.js"></script>
 </head>
+
 <body onload="updatescreen();">
     <div id="wrapper">
         <header>
@@ -19,7 +21,7 @@
         </header>
 
         <div id="target">
-            <img src="image/?.jpg/.png" alt="" />
+            <img src="images/Squirrel Posing.jpg" alt="" />
         </div><!--/ target-->
 
         <!--nav box that holds info and buttons for game!-->
@@ -46,11 +48,19 @@
             </div>
         </nav><!--/nav-->
 
-        <footer>
+        <footer id="footer">
             <p class="copy">&copy; 2021 | HTML & Javascript | Freddy Santiago</p>
         </footer>
 
     </div><!--/ #wrapper-->
+
+    <audio id="gun" src="sounds/wowc.mp3">
+        <p>Your Bowser stinks</p>
+    </audio>
+
+    <audio id="reload" src="sounds/Dio's The World.mp3">
+        <p>Your Bowser stinks</p>
+    </audio>
 
 </body>
 </html>

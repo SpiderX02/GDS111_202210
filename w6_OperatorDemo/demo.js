@@ -13,7 +13,14 @@ function shoot() {
         //currentAmmo = currentAmmo - 1 
         currentAmmo--
     updatescreen()
-    }//if ends here
+    
+    document.getElementById("gun").play();
+
+    document.getElementById("gun")
+    currentAmmo
+
+
+}//if ends here
 }//shoot() END
 
 function updatescreen() {
@@ -29,6 +36,11 @@ function getDiff(a,b) {
 
 function reload() {
     var difference = getDiff(maxAmmo, currentAmmo)
+    
+    if (difference > 0 && totalAmmo != 0) {
+        document.getElementById("reload").play();
+    }
+    
     if(totalAmmo >= difference) {
         currentAmmo += difference
         totalAmmo -= difference

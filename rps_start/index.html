@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<body>
+    <div id="container">
+
+        <h2>Player</h2>
+        <div class="player">
+            <!-- p = player-->
+            <img src="images/rock.jpg" id="rock_p" onclick="play(0);"/>
+            <img src="images/paper.jpg" id="paper_p" onclick="play(1);"/>
+            <img src="images/scissors.jpg" id="scissors_p" onclick="play(2);"/>
+        </div> <!--End Player-->
+
+        <h2>Computer</h2>
+        <div class="computer">
+            <!-- c = computer-->
+            <img src="images/rock.jpg" id="rock_c" />
+            <img src="images/paper.jpg" id="paper_c" />
+            <img src="images/scissors.jpg" id="scissors_c" />
+        </div> <!--End Computer-->
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <nav>
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="Scissors">Scissors</button>
+        </nav>
+        <div id="result">
+            <p>PLAYER CHOSE: <span id="pChoice"></span></p>
+            <p>COMPUTER CHOSE: <span id="cChoice"></span></p>
+            <br>
+            <p>GAME OUTCOME: <span id="results"></span></p>
+        </div><!--/ #results-->
+        <canvas width="1000" height="600"></canvas>
+    </div>
+    <script src="rps.js"></script>
+
+    </body>
+    </html>
+
+</body>
