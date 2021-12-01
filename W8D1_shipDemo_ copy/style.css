@@ -1,0 +1,32 @@
+/* CSS Document */
+body {
+	background-color:purple;
+	font-family:Arial,Verdana,sans-serif;
+	color:#e4e6e9;
+	
+}
+
+h1 {
+	width:100%;
+	margin:5px 0;
+	font-size:1.2em;
+	text-align:center;
+	padding:2px;
+	text-shadow:1px 1px 8px black;
+	
+}
+
+#container {
+	width:800px;
+	height:800px;
+	margin:20px auto;
+	
+	
+}
+#canvas{
+	border:3px solid pink;
+	background-color:black;
+	background-image:url(images/NyanCatBG.gif);
+	box-shadow:1px 1px 10px black;
+}
+
