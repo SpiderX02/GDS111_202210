@@ -1,6 +1,6 @@
 body {background-image: url(images/background.png); background-color: azure;}
 
-div {border: 1px solid black; padding: 10px; margin-bottom: 10px; border-radius: 10px;}
+div {border: 5px solid black; padding: 10px; margin-bottom: 10px; border-radius: 10px;}
 
 #wrapper {
     width: 1000px;
@@ -9,7 +9,7 @@ div {border: 1px solid black; padding: 10px; margin-bottom: 10px; border-radius:
     border-radius: 10px; /*rounds corners of block level elements*/
 }
 
-h1 {color: white; text-align: center;}
+h1 {color: black; text-align: center;}
 
 #header {background-color: cadetblue; height: 100px; padding: 10px; border: 3px solid black;}
 
