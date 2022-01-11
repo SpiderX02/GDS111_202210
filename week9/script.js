@@ -31,17 +31,19 @@ function gameStart(){
 
 //Constructor Function for Asteroid Class
 function Asteroid(){
-    this.radius = randomRange(15,2)
-    this.x = randomRange(canvas.width - this.radius, this.radius)
-    this.y = randomRange(canvas.height - this.radius, this.radius) - canvas.height
-    this.vy = randomRange(10, 5)
+    this.radius = randomRange(40,10)
+    this.x = randomRange(canvas.width - this.radius, this.radius) + canvas.width
+    this.y = randomRange(canvas.height - this.radius, this.radius)  //- canvas.height
+    this.vx = randomRange(-8, -15)
+    this.vy = randomRange(15, 8)
     this.color = "yellow"
 
     this.drawAsteroid = function(){
         ctx.save()
         ctx.beginPath()
         ctx.fillStyle = this.color
-        ctx.arc(this.y, this.x, this.radius, 0, 2 * Math.PI, true)
+        /*ctx.arc(this.y, this.x, this.radius, 0, 2 * Math.PI, true)*/
+        ctx.drawImage(asteroidSprite, this.x - this.radius, this.y - this.radius, this.radius*2, this.radius*2)
         ctx.closePath()
         ctx.fill()
         ctx.restore()
@@ -122,8 +124,8 @@ function pressKeyUp(e){
 
 //constructor function
 function PlayerShip(){
-    this.x = canvas.width/2
-    this.y = canvas.height/2
+    this.x = canvas.width/2;
+    this.y = canvas.height/2;
     this.w = 20
     this.h = 20
     this.vx = 0
@@ -137,6 +139,7 @@ function PlayerShip(){
     this.drawShip = function(){
        ctx.save()
        ctx.translate(this.x, this.y)
+       //This draws the flame behind the ship
         if(this.up || this.left || this.right){
             ctx.save()
             //Changes the drawing values to animate the flame
@@ -160,8 +163,11 @@ function PlayerShip(){
             ctx.restore()
 
         }
+        context.drawImage(shipSprite, -20, -20, 80, 50)
+        console.log("shipSprite drawImage")
+        context.restore()
 
-        ctx.fillStyle = "green"
+        /*ctx.fillStyle = "green"
         ctx.beginPath()
         ctx.moveTo(0, -10)
         ctx.lineTo(10, 10)
@@ -169,7 +175,7 @@ function PlayerShip(){
         ctx.lineTo(0, -10)
         ctx.closePath()
         ctx.fill();
-        ctx.restore()
+        ctx.restore()*/
 
     }//end this.draw() inside of PlayerShip()
 
